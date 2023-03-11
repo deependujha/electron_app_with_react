@@ -39,3 +39,24 @@
 - Now, write your react app in `react_app` folder and then run `npm start` to start the electron app with react.
 
 - We can also install tailwindcss in the react app and use it in the electron app.
+
+---
+
+## Check if the electron app is working in production mode:
+
+- This is a very useful package to check if the electron app is running in production mode or development mode.
+
+![isDev](./assets/isDev.png)
+```sh
+npm i electron-is-dev
+```
+
+```js
+const isDev = require('electron-is-dev');
+
+if (isDev) {
+	console.log('Running in development');
+} else {
+	console.log('Running in production');
+}
+```
